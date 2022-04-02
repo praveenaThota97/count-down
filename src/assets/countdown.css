@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgba(248, 248, 248, 0.952);
+  }
+  .counter1{
+      background-color: white;
+      color: RGB(178, 66, 66);
+      text-decoration: none;
+      border: none;
+      font-size: 21px;
+      width:7px;
+      height:29px;
+      opacity:100%;
+     
+  }
+  .counter2{
+    color:RGB(255, 255, 255);
+    background-color: RGB(178, 66, 66);
+    text-decoration: none;
+    border: none;
+    height:29px;
+    font-size: 21px;
+    opacity:100%;
+    font-family: Avenir;
+    font-weight: 900;
+}
+  
+  .container {
+    width:257px;
+    height:130px;
+    border:RGB(255, 255, 255);
+    background-color: RGB(255, 255, 255);
+    margin: auto;
+    font-family: Avenir;
+    font-weight: 900;
+    margin-top: 15%;
+}
+#loadingimage{
+  font-size: 12px;
+  width:16px;
+  height:16px;
+  transform: translate(0px,5px);
+}
+#savingData{
+  font-size: 12px;
+  width:113px;
+  height:16px;
+  margin-left: 3px;
+  transform: translate(69px,25px);
+  font-family: Avenir;
+  font-weight: 500;
+  color:RGB(0, 0, 0);
+}
+#counter{
+  transform: translate(37px,27px);
+  width:180px;
+  height:56px;
+}
+.column1 {
+    float:left;
+    width:60px;
+    background-color:white;
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px;
+    height: 56px; 
+    opacity:100%;
+    border:solid 1px #990000;
+}
+.column2 {
+    float:left;
+    width:60px;
+    background-color:RGB(251, 232, 232); 
+    padding: 10px;
+    height: 56px; 
+    opacity:100%;
+    color: RGB(178, 66, 66);
+    border:solid 1px RGB(178, 66, 66);
+    font-size: 21px;
+    font-family: Avenir;
+    font-weight: 500;
+}
+.column3{
+    float:left;
+    width:60px;
+    padding: 10px;
+    height: 56px; 
+    opacity:100%;
+    border-radius: 0px 8px 8px 0px;
+    background-color:RGB(178, 66, 66);
+    border:solid 1px RGB(178, 66, 66);
+    
+}
+.countDisplay{
+  width:100px;
+  height:16px;
+  font-size:12px;
+  opacity:100%;
+  color:RGB(0, 0, 0);
+  font-family: Avenir;
+  font-weight: 500;
+  transform: translate(42px,28px);
+}
