@@ -93,7 +93,20 @@ class App extends Component{
 					</div>
 					
 					<div className='countDisplay'>
-						<p>Counter value:{this.state.count}</p>
+						<p>Counter value:
+						{(()=>{
+							//console.log(this.state.count);
+							if(count==null){
+								return <span>
+									{this.state.count +1}
+								</span>
+							}else{
+								return <span>
+									{this.state.count}
+								</span>
+							}
+						})()}
+						</p>
 					</div>
 				</div>
 			
