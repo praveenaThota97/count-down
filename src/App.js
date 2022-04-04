@@ -8,7 +8,8 @@ class App extends Component{
 		this.contentEditable = React.createRef()
 		this.state={
             DataisLoaded: false,
-			count:0
+			count:0,
+			counter:0
 		}
 	}
 	componentDidMount() {
@@ -70,9 +71,10 @@ class App extends Component{
 					</div>
 					
 					<div className='column2' contentEditable={true} suppressContentEditableWarning={true}
-					onInput={(e) =>{console.log(e.currentTarget.textContent)}} >
+					onInput={(e) =>{console.log(e.currentTarget.textContent);let num=parseInt(e.currentTarget.textContent);this.setState({count:num})}} >
 						
 						{(()=>{
+							console.log(this.state.count);
 							if(count==null){
 								return <div>
 									{this.state.count +1}
